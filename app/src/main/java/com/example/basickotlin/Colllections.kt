@@ -6,3 +6,11 @@ package com.example.basickotlin
 // list Read-only menggunakan listOf
 // list Mutable menggunakan mutableListOf
 
+fun ContohList(){
+    println("=== List ===")
+    //List Read-Only
+    val readOnlyAbjad = listOf("A", "B", "C")
+    println(readOnlyAbjad)
+
+    //List mutable
+}
