@@ -25,7 +25,7 @@ fun nullSafety(){
 
     // notNull doesn't accept null values
     fun strLength(notNull: String): Int{
-        return notNull.Length
+        return notNull.length
     }
 
     println(strLength(neverNull)) // 18
