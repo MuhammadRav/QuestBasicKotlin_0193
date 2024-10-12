@@ -13,4 +13,10 @@ fun ContohList(){
     println(readOnlyAbjad)
 
     //List mutable
+    val shape: MutableList<String> = mutableListOf("Circle", "Square", "Triangle")
+    println(shape)
+
+    // menambahkan data ke dalam list mutable
+    shape.add("Circle")
+    println(shape)
 }
