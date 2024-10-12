@@ -1,5 +1,7 @@
 package com.example.basickotlin
 
+import java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject
+
 // Conditional expression adalah ekspresi yang mengembalikan nilai berdasarkan kondisi tertentu
 // Conditional expression menggunakan if-else, when, dan try-catch
 
@@ -34,7 +36,37 @@ fun ConditionalStatement(){
         println("Result: $result")
     } catch (e: NumberFormatException) {
         println("Invalid Number")
-
     }
+}
+
+fun Perulangan(){
+    println()
+    println("=== Perulangan ===")
+
+    for (i in 1..5){
+        println("Perulangan ke-$i")
+    }
+
+    val cars = listOf("BMW", "Toyota", "Honda", "Audi")
+    for (car in cars){
+        println("Car type: $car")
+    }
+
+    var x = 1
+    while (x <= 5){
+        println("Perulangan ke-$x")
+        x++
+    }
+
+    var y = 1
+    do {
+        println("Perulangan ke-$y")
+        y++
+    } while (y <= 5)
+}
+
+fun main(){
+    ConditionalStatement()
+    Perulangan()
 }
 
